@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de Timeline - Matemáticas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Banner de bienvenida -->
+  <div id="banner">
+    <img src="images/banner.jpg" alt="Banner Arcade">
+  </div>
+
+  <h1>Juego de Timeline - ¡Aprende Historia de las Matemáticas!</h1>
+  <p class="instruction">
+    Bienvenido a Línea de Tiempo de las Matemáticas, aprende jugando y adivinando el orden de los acontecimientos.
+  </p>
+  
+  <!-- Botón Comenzar -->
+  <button id="startButton">Comenzar</button>
+  
+  <!-- Temporizador (oculto inicialmente) -->
+  <div id="timer" style="display: none;">Tiempo restante: 02:00</div>
+  
+  <!-- Contenedor para las cartas (oculto inicialmente) -->
+  <div id="cards-container" style="display: none;">
+    <p class="hint">
+  Arrastra las cartas de aquí a la línea de tiempo. Al seleccionar una carta, podrás ver una descripción del evento.
+</p>
+  </div>
+  
+  <!-- Línea de tiempo con 5 dropzones (oculta inicialmente) -->
+  <div id="timeline" style="display: none;">
+    <h2>Línea de Tiempo</h2>
+    <div class="dropzone" data-position="0"></div>
+    <div class="dropzone" data-position="1"></div>
+    <div class="dropzone" data-position="2"></div>
+    <div class="dropzone" data-position="3"></div>
+    <div class="dropzone" data-position="4"></div>
+  </div>
+  
+  <!-- Panel de detalle: solo se muestra la descripción de la carta seleccionada -->
+  <div id="detail-panel" style="display: none;">
+    <div id="detail-description"></div>
+  </div>
+  
+  <!-- Botones para juego -->
+  <button id="checkButton" style="display: none;">Comprobar Orden</button>
+  <button id="restartButton" style="display: none;">Reiniciar Juego</button>
+  
+  <div id="result" style="display: none;"></div>
+  
+  <!-- Pie de página con la autoría y aclaraciones -->
+  <footer class="footer">  
+  <p>Lavalenmaster - ChatGPT (versión 4) &copy; 2023. Las imágenes utilizadas tienen derechos de autor. Este es un ejercicio académico sin fines comerciales.</p>
+</footer>
+  
+  <!-- Elementos de audio -->
+  <audio id="inicio" src="sounds/inicio.mp3"></audio>
+  <audio id="fondo" src="sounds/fondo.mp3" loop></audio>
+  <audio id="complete" src="sounds/complete.mp3"></audio>
+  <audio id="incompleto" src="sounds/incompleto.mp3"></audio>
+  <audio id="ceropuntos" src="sounds/ceropuntos.mp3"></audio>
+  <audio id="aviso" src="sounds/aviso.mp3"></audio>
+  
+  <script src="script.js"></script>
+<footer class="dedication">
+  <img src="images/escudo.png" alt="Escudo del Colegio" class="school-logo">
+  <p>Dedicatoria: A los estudiantes de la I.E. Marco Fidel Suárez de Bello, con todo nuestro cariño y dedicación educativa.</p>
+</footer>
+</body>
+</html>
+
